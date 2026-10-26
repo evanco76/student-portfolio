@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Password Strength Checker | EvanTherese Nwosu</title>
+<meta name="description" content="Check how strong a password is.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow" id="glow" aria-hidden="true"></div>
+<header class="site-header">
+<div class="pill">
+<a class="brand" href="index.html">Dr EvanTherese Nwosu</a>
+<button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+<nav class="nav" aria-label="Main navigation"><ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div>
+</header>
+<main>
+
+<div class="wrap page-title title-center"><h1>Password strength checker</h1><p>Type a password to see how strong it is. This is a learning demo, so use a made-up password, never a real one.</p></div>
+<section>
+<div class="wrap" style="max-width:680px">
+<div class="card">
+<label for="pw" style="font-weight:800;color:var(--ink)">Try a password</label>
+<input type="text" id="pw" autocomplete="off" placeholder="Type here" style="margin-top:.5rem">
+<div class="meter"><span id="bar"></span></div>
+<p id="strength" style="font-size:.9rem">Type a password to test it. Nothing you type is stored or sent anywhere.</p>
+<ul class="checks" id="checks">
+<li>At least 12 characters</li><li>A lowercase letter</li><li>An uppercase letter</li><li>A number</li><li>A symbol such as ! or @</li><li>No common words like &ldquo;password&rdquo;</li>
+</ul>
+</div>
+<div class="card" style="margin-top:1.5rem"><h3>Quick safety habits</h3>
+<ul class="clean" style="margin-top:.6rem"><li>Use a different password for every account.</li><li>Turn on two-step verification wherever you can.</li><li>Think before clicking links in unexpected messages.</li><li>Keep your phone and apps updated.</li></ul></div>
+<p style="text-align:center;margin-top:1.5rem"><a href="projects.html">&larr; Back to projects</a></p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<p>&copy; 2026 EvanTherese Nwosu &middot; Enugu, Nigeria</p>
+</footer>
+<script src="main.js"></script>
+<script src="safety.js"></script>
+</body>
+</html>
